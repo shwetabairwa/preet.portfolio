@@ -3,7 +3,6 @@
   "private": true,
   "version": "0.0.0",
   "homepage": "https://shwetabairwa.github.io/preet.portfolio/",
-
   "type": "module",
   "scripts": {
     "dev": "vite",
