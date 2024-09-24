@@ -10,7 +10,7 @@ function Header() {
         <div className="sm:w-2/5 w-full flex justify-center sm:items-end mb-6 sm:mb-0 order-1 sm:order-2">
           <img
             src={profileImage1}
-            alt="Preet Bairwa"
+            alt="Pooja Verma"
             className="h-3/4 w-3/4 mb-6 sm:h-4/5 sm:w-4/5 object-cover rounded-full"
           />
         </div>
@@ -19,7 +19,7 @@ function Header() {
           <span className="block text-xl text-yellow-500 mb-2">
             Hello, I am
           </span>
-          <h1 className="text-6xl font-bold text-gray-900">Preet Bairwa,</h1>
+          <h1 className="text-6xl font-bold text-gray-900">Pooja Verma,</h1>
           <h1 className="text-6xl font-bold text-gray-900">
             Digital Marketing
           </h1>
