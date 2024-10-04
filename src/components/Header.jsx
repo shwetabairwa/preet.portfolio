@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import profileImage1 from "../assets/images/profileImage1.png"; // Adjust the path according to your project structure
+import profileImage from "../assets/images/profileImage.png"; // Adjust the path according to your project structure
 
 function Header() {
   return (
@@ -9,9 +9,9 @@ function Header() {
         {/* Image Section - Will be above text on small screens */}
         <div className="sm:w-2/5 w-full flex justify-center sm:items-end mb-6 sm:mb-0 order-1 sm:order-2">
           <img
-            src={profileImage1}
+            src={profileImage}
             alt="Pooja Verma"
-            className="h-3/4 w-3/4 mb-6 sm:h-4/5 sm:w-4/5 object-cover rounded-full"
+            className="h-3/4 w-3/4 mb-6 sm:h-3/5 sm:w-3/5 object-cover rounded-full bg-yellow-500"
           />
         </div>
         {/* Text Section */}
@@ -19,17 +19,28 @@ function Header() {
           <span className="block text-xl text-yellow-500 mb-2">
             Hello, I am
           </span>
-          <h1 className="text-6xl font-bold text-gray-900">Pooja Verma,</h1>
-          <h1 className="text-6xl font-bold text-gray-900">
-            Digital Marketing
+          <h1 className="text-6xl font-bold text-gray-900 ">Pooja Verma,</h1>
+          <h1 className="text-5xl font-bold text-yellow-500 uppercase leading-tight">
+            Digital Marketer
           </h1>
-          <p className="mt-5 text-xs text-gray-600">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
-            libero sit soluta earum laudantium, quos nisi quibusdam expedita
-            assumenda quas laboriosam ad porro, quod nobis nam? Esse commodi
-            illum aut!
+          <p className="mt-3 sm:w-4/5 text-xs text-gray-600">
+            Hi, I’m Pooja Verma, a dedicated digital marketer with a passion for
+            driving growth and innovation. After spending years in traditional
+            9-to-5 roles, I transitioned into digital marketing to pursue a more
+            flexible and creative career. Now based in Gurugram, I focus on
+            mastering the latest techniques in Google My Bussiness, social media
+            management, Google Ads, and Meta Ads to help businesses thrive in
+            the digital landscape.
           </p>
-          <div className="mt-6">
+          <p className="mt-3 sm:w-4/5 text-xs text-gray-600">
+            I specialize in creating data-driven campaigns and implementing
+            online growth strategies that enhance brand visibility and foster
+            meaningful connections with target audiences. My goal is to deliver
+            impactful, results-oriented solutions that elevate your online
+            presence and drive business success. Let’s collaborate and take your
+            brand to new heights!
+          </p>
+          <div className="mt-8">
             <a
               href="/PreetBairwa_CV.pdf"
               download
