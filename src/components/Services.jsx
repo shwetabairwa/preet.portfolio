@@ -81,7 +81,7 @@ function Services() {
               messaging.
             </p>
           </div>
-          <div className="bg-gray-100 p-6 rounded-lg hover:shadow-lg transition-shadow duration-300">
+          {/* <div className="bg-gray-100 p-6 rounded-lg hover:shadow-lg transition-shadow duration-300">
             <div className="flex items-center justify-start mb-4">
               <img src={img4} alt="SEO Consultancy" className="h-12 sm:h-10" />
             </div>
@@ -106,7 +106,7 @@ function Services() {
               audience segmentation, I create compelling ads that drive relevant
               traffic and conversions.
             </p>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

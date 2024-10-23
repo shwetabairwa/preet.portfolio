@@ -102,7 +102,7 @@ const Footer = () => {
               </li>
               <li>
                 <a  className="text-gray-400 hover:text-white text-xs">
-                  poojaverma887778@gmail.com
+                vermaapooja08@gmail.com
                 </a>
               </li>
               <li>

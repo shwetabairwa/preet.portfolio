@@ -21,10 +21,9 @@ function Contact() {
             Interested in working with me? Let's connect!
           </h2>
           <p className="mt-5 mb-8 text-sm sm:text-center sm:pr-6">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
-            libero sit soluta earum laudantium, quos nisi quibusdam expedita
-            assumenda quas laboriosam ad porro, quod nobis nam? Esse commodi
-            illum aut!
+            I’m a digital marketer who can help your business succeed online. I
+            can help with things like seo, social media, and online advertising.
+            Let's work together to achieve your goals
           </p>
           <div className="mt-8">
             <button

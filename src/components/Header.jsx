@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import profileImage from "../assets/images/profileImage.png"; // Adjust the path according to your project structure
+import profileImage from "../assets/images/profileImage.jpeg"; // Adjust the path according to your project structure
 
 function Header() {
   return (
@@ -11,11 +11,11 @@ function Header() {
           <img
             src={profileImage}
             alt="Pooja Verma"
-            className="h-3/4 w-3/4 mb-6 sm:h-3/5 sm:w-3/5 object-cover rounded-full bg-yellow-500"
+            className="h-3/4 w-3/4 mb-6 sm:h-4/5 sm:w-4/5 object-cover rounded-full bg-yellow-500"
           />
         </div>
         {/* Text Section */}
-        <div className="sm:w-3/5 mb-8 sm:mb-0 text-center sm:text-left sm:pl-6 flex flex-col justify-center order-2 sm:order-1">
+        <div className="sm:w-4/5 mb-8 sm:mb-0 text-center sm:text-left sm:pl-6 flex flex-col justify-center order-2 sm:order-1">
           <span className="block text-xl text-yellow-500 mb-2">
             Hello, I am
           </span>
