@@ -19,18 +19,18 @@ function About() {
     },
     {
       icon: faUserCheck,
-      title: "150+ Happy Clients",
+      title: "5+ Happy Clients",
       description: "Delivering satisfaction through dedicated services.",
     },
     {
       icon: faClock,
-      title: "200+ Hours of Work",
+      title: "100+ Hours of Work",
       description: "Commitment to excellence in every project.",
     },
     {
       icon: faAward,
-      title: "30 Awards Won",
-      description: "Recognition in the industry for outstanding work.",
+      title: "3+ Certificate",
+      description: "Certified expertise in multiple domains, showcasing skills and dedication."
     },
   ];
 

@@ -28,7 +28,7 @@ const Experience = ({ handleClose }) => {
     },
     {
       icon: faBriefcase,
-      title: "Social Media Manager",
+      title: "Digital Marketer Executive",
       date: "2024",
       institution: "Voik India",
       description:
