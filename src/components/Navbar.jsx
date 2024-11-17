@@ -13,7 +13,7 @@ function Navbar() {
         <div className="flex items-center justify-between h-16">
           {/* Brand/Logo */}
           <div className="text-xl font-bold text-yellow-500">
-            <a href="/" aria-label="Home">Preet.</a>
+            <a href="/" aria-label="Home">Pooja.</a>
           </div>
 
           {/* Navigation Links */}

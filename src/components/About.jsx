@@ -70,7 +70,7 @@ function About() {
               onClick={handleExperienceClick}
               className="inline-block px-6 py-3 text-base font-medium rounded-md text-white bg-green-600 hover:bg-green-700 transition duration-300"
             >
-              See my experiences
+              See My Experiences
             </button>
           </header>
           <div className="sm:w-3/5">

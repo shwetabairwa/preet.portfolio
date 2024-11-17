@@ -7,7 +7,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 sm:grid-cols-5 gap-3 ">
           {/* Column 1 */}
           <div className="w-full sm:col-span-2  mb-4 sm:mb-0">
-            <h2 className="text-xl font-bold mb-2 text-yellow-500">Preet.</h2>
+            <h2 className="text-xl font-bold mb-2 text-yellow-500">Pooja.</h2>
             <p className="text-gray-400 mb-4 text-xs w-3/5">
               iOS devices come in a variety of screen sizes and can be used in
               either portrait or landscape orientation.

@@ -24,22 +24,15 @@ function Header() {
             Digital Marketer
           </h1>
           <p className="mt-3 sm:w-4/5 text-xs text-gray-600">
-            Hi, I’m Pooja Verma, a dedicated digital marketer with a passion for
-            driving growth and innovation. After spending years in traditional
-            9-to-5 roles, I transitioned into digital marketing to pursue a more
-            flexible and creative career. Now based in Gurugram, I focus on
-            mastering the latest techniques in Google My Bussiness, social media
-            management, Google Ads, and Meta Ads to help businesses thrive in
-            the digital landscape.
+            Hi, I'm Pooja Verma, a digital marketing expert from Gurugram. I
+            love helping businesses grow online. I'm really good at using tools
+            like Google My Business, social media, Google Ads, and Meta Ads to
+            reach more people and get better results. I use data to make smart
+            decisions and create campaigns that really work. I want to help you
+            make your brand more visible and connect with your customers in a
+            meaningful way.Let's work together to take your business to the next level!
           </p>
-          <p className="mt-3 sm:w-4/5 text-xs text-gray-600">
-            I specialize in creating data-driven campaigns and implementing
-            online growth strategies that enhance brand visibility and foster
-            meaningful connections with target audiences. My goal is to deliver
-            impactful, results-oriented solutions that elevate your online
-            presence and drive business success. Let’s collaborate and take your
-            brand to new heights!
-          </p>
+     
           <div className="mt-8">
             <a
               href="/PreetBairwa_CV.pdf"
