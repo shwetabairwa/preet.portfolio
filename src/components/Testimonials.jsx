@@ -21,6 +21,27 @@ const testimonials = [
     feedback:
       "Pooja’s SEO expertise helped us rank higher in search results, which boosted our web traffic and sales. She’s a reliable, insightful partner who truly understands the digital marketing landscape.",
   },
+  {
+    name: "Amit Aggerwal",
+    title: "Owner: Voik India",
+    feedback:
+      "Pooja’s SEO strategies significantly improved our online visibility. Thanks to her detailed keyword research and on-page optimization, we saw a consistent rise in organic traffic. She's a proactive and dedicated professional we trust completely.",
+  },
+  {
+    name: "Pushker Saroj",
+    title: "Owner: Blue Hawk",
+    feedback:
+      "Working with Pooja was a game-changer for our social media and Google rankings. She brought fresh ideas to our campaigns, tracked performance with precision, and always delivered more than expected. Highly recommend her for digital growth.",
+  },
+  {
+    name: "Rahul Bairwa",
+    title: "Owner: None",
+    feedback:
+      "Pooja provided valuable SEO consulting for my startup website. Her approach was clear, goal-oriented, and easy to follow—even for someone without a tech background. I appreciated her patience and ability to simplify complex marketing tasks.",
+  }
+  
+  
+
 ];
 
 function Testimonials() {

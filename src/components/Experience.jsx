@@ -9,23 +9,7 @@ import {
 
 const Experience = ({ handleClose }) => {
   const experienceItems = [
-    {
-      icon: faGraduationCap,
-      title: "Master of Arts in History",
-      date: "2023",
-      institution: "MS Girls College, Bikaner",
-      description:
-        "Master of Arts in History from MS Girls College, Bikaner, completed in 2023",
-    },
-  
-    {
-      icon: faGraduationCap,
-      title: "Bachelor of Arts",
-      date: "2015",
-      institution: " MS Girls College, Bikaner",
-      description:
-        "Bachelor of Arts from MS Girls College, Bikaner, completed in 2015.",
-    },
+
     {
       icon: faBriefcase,
       title: "Digital Marketer Executive",
@@ -34,14 +18,31 @@ const Experience = ({ handleClose }) => {
       description:
         "Managed social media to boost brand visibility, engagement, and loyalty.Created content and ran paid campaigns across platforms to drive traffic and reach targets.Optimized strategies using performance metrics and ensured consistent messagin.",
     },
-    // {
-    //   icon: faBriefcase,
-    //   title: "Full Stack Developer",
-    //   date: "2015 - 2021",
-    //   institution: "Freelance",
-    //   description:
-    //     "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    // },
+    {
+      icon: faBriefcase,
+      title: "Social Media Designer",
+      date: "Feb-2024 - Apr-2024",
+      institution: "Freelance",
+      description:
+        "Designed visually engaging social media graphics and storyboards for multiple clients. Created cohesive brand visuals across Instagram, Facebook, and LinkedIn using tools like Canva and Adobe Photoshop. Ensured timely delivery of creatives aligned with each brand’s voice and strategy.",
+    },
+    {
+      icon: faBriefcase,
+      title: "Social Media Marketing Specialist",
+      date: "Jan-2023 - Mar-2024",
+      institution: "Freelance",
+      description:
+        "Managed and executed content strategies for diverse brands across Instagram, LinkedIn, and Facebook. Increased audience engagement through data-driven campaigns, keyword research, and competitor analysis. Utilized tools like Meta Business Suite and Buffer for scheduling and analytics.",
+    },
+    {
+      icon: faBriefcase,
+      title: "Digital Marketing Intern",
+      date: "Nov-2023 - Jan-2024",
+      institution: "Freelance",
+      description:
+        "Assisted in planning and implementing digital marketing campaigns, including email marketing, SEO optimization, and social media engagement. Conducted market research and performance tracking using Google Analytics and SEMrush to support strategic decisions.",
+    }
+    
   ];
 
   return (
@@ -51,7 +52,7 @@ const Experience = ({ handleClose }) => {
     >
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-3xl font-bold text-gray-900 mb-10 text-center">
-          Experience & Education
+          Experience
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {experienceItems.map((item, index) => (

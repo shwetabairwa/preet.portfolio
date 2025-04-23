@@ -67,48 +67,50 @@ function Services() {
               engagement.
             </p>
           </div>
-          {/* <div className="bg-gray-100 p-6 rounded-lg hover:shadow-lg transition-shadow duration-300">
+          <div className="bg-gray-100 p-6 rounded-lg hover:shadow-lg transition-shadow duration-300">
             <div className="flex items-center justify-start mb-4">
               <img src={img3} alt="Page Ranking" className="h-12 sm:h-10" />
             </div>
             <h3 className="text-lg font-semibold text-gray-900">
-              Web Designing / Web Development:
+              Content Creation
             </h3>
             <p className="mt-2 text-gray-600 text-xs">
-              With a strong foundation in web design and development, I create
-              visually appealing and responsive websites tailored to user needs.
-              My approach emphasizes user experience and functionality, ensuring
-              seamless navigation and effective communication of brand
-              messaging.
+              I specialize in crafting engaging and high-quality content that
+              resonates with audiences across multiple platforms. From blog
+              posts and social media content to multimedia elements, I ensure
+              that each piece is tailored to the brand's voice and purpose. My
+              goal is to create content that not only informs but also drives
+              action, encouraging interaction and engagement from the audience.
             </p>
-          </div> */}
+          </div>
           <div className="bg-gray-100 p-6 rounded-lg hover:shadow-lg transition-shadow duration-300">
             <div className="flex items-center justify-start mb-4">
               <img src={img4} alt="SEO Consultancy" className="h-12 sm:h-10" />
             </div>
             <h3 className="text-lg font-semibold text-gray-900">
-              Meta Ads/Google Ads
+              Influencer marketing
             </h3>
             <p className="mt-2 text-gray-600 text-xs">
-              I manage Meta Ads (Facebook/Instagram) and Google Ads by creating
-              engaging creatives and using targeted strategies to boost brand
-              visibility and drive sales. My approach combines creativity with
-              data-driven insights to optimize campaign performance across both
-              platforms.
+              I collaborate with influencers to create authentic, engaging
+              content that resonates with target audiences. By carefully
+              selecting influencers whose values align with the brand, I craft
+              strategies that amplify brand awareness, increase engagement, and
+              drive conversions. My approach is focused on building long-term
+              partnerships and maximizing the impact of influencer campaigns.
             </p>
           </div>
-          {/* <div className="bg-gray-100 p-6 rounded-lg hover:shadow-lg transition-shadow duration-300">
+          <div className="bg-gray-100 p-6 rounded-lg hover:shadow-lg transition-shadow duration-300">
             <div className="flex items-center justify-start mb-4">
               <img src={img3} alt="Page Ranking" className="h-12 sm:h-10" />
             </div>
-            <h3 className="text-lg font-semibold text-gray-900">Google Ads:</h3>
+            <h3 className="text-lg font-semibold text-gray-900">Google Ads</h3>
             <p className="mt-2 text-gray-600 text-xs">
               In managing Meta Ads, I focus on reaching audiences on platforms
               like Facebook and Instagram. My strategy involves crafting
               engaging ad creatives and targeting specific demographics to
               enhance brand visibility and drive sales.
             </p>
-          </div> */}
+          </div>
         </div>
       </div>
     </section>

@@ -30,12 +30,13 @@ function Header() {
             reach more people and get better results. I use data to make smart
             decisions and create campaigns that really work. I want to help you
             make your brand more visible and connect with your customers in a
-            meaningful way.Let's work together to take your business to the next level!
+            meaningful way.Let's work together to take your business to the next
+            level!
           </p>
-     
+
           <div className="mt-8">
             <a
-              href="/PreetBairwa_CV.pdf"
+              href="/Digital Marketer_2+yr_Exp_Resume_PoojaVerma.pdf"
               download
               className="px-6 py-3 border border-transparent text-lg font-medium rounded-md text-white bg-green-600 hover:bg-green-700"
             >

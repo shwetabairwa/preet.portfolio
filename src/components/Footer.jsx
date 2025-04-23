@@ -129,7 +129,7 @@ const Footer = () => {
       {/* Copyright section */}
       <div className="border-t border-gray-600 mt-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center text-gray-400 pt-4">
-          <p>&copy; 2024 the code journey Studio. All rights reserved.</p>
+          <p>&copy; 2024 ShwetaBairwa Studio. All rights reserved.</p>
         </div>
       </div>
     </footer>
