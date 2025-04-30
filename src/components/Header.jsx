@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import profileImage from "../assets/images/profileImage.jpeg"; // Adjust the path according to your project structure
 
 function Header() {
