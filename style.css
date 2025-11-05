@@ -1,0 +1,911 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Dorsa&family=Poller+One&family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dorsa&family=Poiret+One&family=Poller+One&family=Staatliches&display=swap');
+html, body, #root {
+  height: auto;
+  min-height: 100%;
+  /* overflow-x: hidden; */
+  /* overflow-y: auto; */
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  /* font-family: sans-serif; fallback font */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+#about,
+#services {
+  scroll-margin-top: 5rem;
+}
+.wrapper {
+  min-height: 90vh;
+  width: 100%;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  /* overflow: hidden; ❌ REMOVE this */
+  color: #000;
+  padding-top: 3.4rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong,
+b,
+.button,
+.navBtn,
+.experienceItem .company,
+.experienceItem,
+.smallText,
+.smallTxt,
+.navLinks {
+  font-family: "Staatliches", sans-serif;
+}
+/* TEXT */
+.textContainer {
+  position: relative;
+  text-align: center;
+  display: inline-block;
+}
+
+.bigText {
+  font-size: 22rem;
+  font-weight: 900;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  opacity: 0.9;
+  white-space: nowrap;
+  color: #000;
+  margin: 0;
+}
+
+.smallText {
+  font-family: "Poiret One", sans-serif;
+
+  font-size: 1.5rem;
+  /* text-align: center; */
+  font-weight: 900;
+  margin-left: 1rem;
+  margin-bottom: -2.4rem;
+  color: #000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+/* ===== ABOUT SECTION TYPOGRAPHY FIX ===== */
+.subText,
+.experienceItem .roleYear {
+  font-family: sans-serif; /* ✅ matches your subText font */
+  font-size: 1rem;
+  font-weight: 300;
+  text-align: left;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Drawer */
+.drawer {
+  position: fixed;
+  top: 0;
+  right: 0; /* anchor */
+  width: 60%;
+  max-width: 420px;
+  height: 100%;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 4rem 2rem;
+  gap: 2rem;
+  z-index: 20;
+  transform: translateX(100%); /* hidden by default */
+  transition: transform 0.3s ease;
+  pointer-events: none; /* ⛔️ can't capture touches when closed */
+}
+.drawer.open {
+  transform: translateX(0); /* visible */
+  pointer-events: auto; /* ✅ interactive only when open */
+}
+
+/* Close Button inside Drawer */
+.closeBtn {
+  font-size: 2rem;
+  align-self: flex-start;
+  cursor: pointer;
+  margin-bottom: 2rem;
+}
+
+.image {
+  width: 40%;
+  object-fit: cover;
+  margin-top: -33.5rem;
+  z-index: 3;
+}
+
+/* BUTTONS */
+.buttonContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: -2rem;
+  z-index: 3;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.button {
+  padding: 0.8rem 4rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border: 2px solid #000;
+  background: #fff;
+  color: #000;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+
+/* ✅ MOBILE RESPONSIVE */
+/* ✅ bottom-right subtitle (default desktop view: relative to PORTFOLIO) */
+.smallTxt {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  font-size: 1.7rem;
+  color: #ffb703;
+  opacity: 0.9;
+  font-weight: 500;
+  text-align: right;
+}
+
+/* ✅ Unified Button Styles */
+.button,
+.navBtn {
+  padding: 0.8rem 3.4rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border: 2px solid #000;
+  background: #fff;
+  color: #000;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: all 0.3s ease; /* smooth transition */
+}
+
+/* ✅ Hover Effect */
+.button:hover,
+.navBtn:hover {
+  background: #000;
+  color: #fff;
+  transform: scale(1.05); /* subtle zoom */
+}
+
+/* ===== HEADER ===== */
+.header {
+  width: 100%; /* ✅ makes header span full width */
+  background: #fff;
+  padding: 1rem 2rem; /* ✅ horizontal padding */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  box-sizing: border-box; /* ✅ ensures padding doesn’t push it outside */
+}
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #000;
+}
+
+.navLinks {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.navLinks a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: #000;
+  font-weight: 500;
+}
+
+.navBtn {
+  padding: 0.6rem 1.5rem;
+  border: 2px solid #000;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 600;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+
+.navBtn:hover {
+  background: #fff;
+  color: #000;
+}
+
+/* Hamburger menu (hidden on desktop) */
+.hamburger {
+  font-size: 1.8rem;
+  cursor: pointer;
+  display: none;
+}
+
+/* Drawer */
+.drawer {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 60%;
+  height: 100%;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 4rem 2rem;
+  gap: 2rem;
+  transition: right 0.3s ease;
+  z-index: 20;
+}
+
+.drawer.open {
+  right: 0;
+}
+
+.drawer a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #000;
+}
+
+.drawer .navBtn {
+  width: fit-content;
+}
+
+/* ===== ABOUT SECTION ===== */
+/* ===== ABOUT SECTION (Desktop) ===== */
+.aboutSection .servicesSection .workSection {
+  width: 70%;
+  display: flex;
+  height: 100dvh;
+  align-items: center;
+  justify-content: center;
+  margin: 4rem 2rem;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.aboutContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 1rem 2rem;
+  position: relative; /* ✅ enable layering */
+}
+
+/* Image on Right */
+.aboutImage {
+  flex: 1;
+  max-width: 70%; /* ✅ larger image */
+  position: relative;
+  z-index: 1; /* image behind text */
+}
+
+.aboutImage img {
+  width: 100%;
+  border-radius: 12px;
+  object-fit: contain;
+}
+
+/* Text on Left, over the Image */
+.aboutContent {
+  flex: 1;
+  width: 50%; /* ✅ smaller than image */
+  position: absolute; /* ✅ overlap on image */
+  right: 0; /* stick to left side */
+  z-index: 2; /* above image */
+  background: rgba(255, 255, 255, 0.8);
+  margin: 2rem;
+  padding: 1.5rem;
+  border-radius: 12px;
+}
+
+/* ✅ Responsive (stack on mobile) */
+.experienceList {
+  position: relative;
+  margin-top: 2rem;
+  padding: 0;
+  /* padding-left: 2rem; */
+}
+
+.experienceItem {
+  position: relative;
+  padding-left: 2rem;
+  text-align: left;
+  font-family: sans-serif;
+
+  margin-bottom: 2rem;
+}
+
+.experienceItem .company {
+  font-weight: bold;
+  /* text-transform: uppercase; */
+  font-size: 1.1rem;
+}
+
+.experienceItem .roleYear {
+  font-size: 0.95rem;
+}
+
+/* Dot */
+.experienceItem .dot {
+  position: absolute;
+  left: 0;
+  top: 0.5rem;
+  width: 12px;
+  height: 12px;
+  background: #000;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+/* Line */
+.experienceItem .line {
+  position: absolute;
+  left: 5px;
+  top: 1.2rem;
+  width: 2px;
+  height: calc(100% - -2rem);
+  background: #000;
+}
+
+.skillsList {
+  font-family: sans-serif; /* ✅ matches your subText font */
+  font-size: 1rem;
+  font-weight: 300;
+  text-align: left;
+  line-height: 1;
+
+  color: #333;
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+.skillsList li {
+  margin-bottom: 0.8rem;
+}
+.skill {
+  font-style: bold;
+  font-family: "Staatliches", sans-serif;
+  font-weight: 400;
+}
+/* ===== SERVICES SECTION ===== */
+.servicesSection {
+  padding-top: 3rem;
+  text-align: center;
+}
+
+.servicesTitle {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-family: "Staatliches", sans-serif;
+}
+
+.servicesSubtitle .workSubtitle {
+  font-size: 1.1rem;
+  color: #555;
+  font-family: sans-serif;
+}
+
+.servicesContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 1rem 3rem;
+  gap: 3rem;
+  padding: 1rem;
+}
+
+.serviceCard {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  transition: all 0.3s ease;
+  text-align: left;
+  /* width: 100%; */
+}
+
+.serviceCard:hover {
+  transform: translateY(-8px);
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.serviceCard h3 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  font-family: "Staatliches", sans-serif;
+  color: #000;
+}
+
+.serviceCard p {
+  font-size: 1rem;
+  font-family: sans-serif;
+  color: #444;
+  line-height: 1.5;
+}
+/* * ===== MY WORK SECTION ===== */
+*/ .workSection {
+  width: 80%;
+  padding-top: 7rem;
+  /* margin: 7rem 2rem; */
+  background: #fafafa;
+  text-align: center; /* ✅ centers text like Services */
+}
+.workContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 cards in one row */
+  gap: 2rem;
+  width: 90%;
+  margin: 0 auto;
+  justify-items: center; /* centers the cards */
+}
+
+.workTitle {
+  font-size: 2.5rem;
+  /* padding-top: 7rem; */
+  width: 100%;
+  text-align: center;
+  font-family: "Staatliches", sans-serif;
+}
+
+.workSubtitle {
+  font-size: 1.1rem;
+  color: #555;
+  font-family: sans-serif;
+  width: 100%;
+  text-align: center;
+}
+
+.workCard {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #ddd;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: left;
+}
+
+.workCard:hover {
+  transform: translateY(-8px);
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.workCard img {
+  width: 100%;
+  height: 200px;
+  object-fit: fill;
+}
+
+.workCard h3 {
+  font-size: 1.2rem;
+  margin: 1rem;
+  font-family: "Staatliches", sans-serif;
+}
+
+.workCard p {
+  font-size: 0.95rem;
+  color: #444;
+  font-family: sans-serif;
+  margin: 0 1rem 1rem;
+}
+
+.footer {
+  background: #000;
+  color: #fff;
+  
+  padding: 3rem 2rem 1.5rem;
+  margin-top: 4rem;
+}
+
+.footerContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: left; /* ✅ left align items */
+}
+
+.footerAbout h3 {
+  font-family: "Staatliches", sans-serif;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.footerAbout p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  font-family: sans-serif;
+}
+
+.footerLinks h4,
+.footerSocials h4 {
+  font-family: "Staatliches", sans-serif;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.footerLinks ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footerLinks li {
+  margin: 0.6rem 0;
+}
+
+.footerLinks a {
+  text-decoration: none;
+  color: #bbb;
+  transition: color 0.3s;
+  font-family: sans-serif;
+}
+
+.footerLinks a:hover {
+  color: #ffb703;
+}
+
+.socialIcons {
+  display: flex;
+  justify-content: flex-start; /* ✅ left align icons */
+  gap: 1rem;
+}
+
+.socialIcons a {
+  font-size: 1.3rem;
+  color: #bbb;
+  transition: color 0.3s, transform 0.2s;
+}
+
+.socialIcons a:hover {
+  color: #ffb703;
+  transform: scale(1.2);
+}
+
+.footerBottom {
+  margin-top: 2rem;
+  border-top: 1px solid #333;
+  padding-top: 1rem;
+  font-size: 0.9rem;
+  color: #aaa;
+  font-family: sans-serif;
+  text-align: center; /* ✅ keep bottom text left */
+}
+/* ===== GALLERY SECTION ===== */
+.gallerySection {
+  padding: 4rem 2rem;
+  text-align: center;
+  background: #fdfdfd;
+}
+
+.galleryTitle {
+  font-size: 2.5rem;
+  font-family: "Staatliches", sans-serif;
+  margin-bottom: 0.5rem;
+}
+
+.gallerySubtitle {
+  font-size: 1.1rem;
+  color: #555;
+  font-family: sans-serif;
+  margin-bottom: 2rem;
+}
+
+.galleryGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+.galleryItem {
+  aspect-ratio: 1/1; /* square */
+  overflow: hidden;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.galleryItem img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.galleryItem:hover {
+  transform: scale(1.05);
+}
+
+/* ===== LIGHTBOX ===== */
+.lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 50;
+}
+
+.lightboxImg {
+  max-width: 90%;
+  max-height: 80%;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+}
+
+.lightbox .closeBtn {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  font-size: 2rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+.lightbox .navBtn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 3rem;
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  user-select: none;
+  padding: 0 1rem;
+}
+
+.lightbox .navBtn.left {
+  left: 2rem;
+}
+
+.lightbox .navBtn.right {
+  right: 2rem;
+}
+
+.lightbox .navBtn:hover {
+  color: #ffb703;
+}
+.heroSection {
+  position: relative; /* ensure child can position absolutely */
+  text-align: center;
+  padding: 2rem;
+}
+
+.heroRole {
+  font-size: 1.2rem;
+  font-weight: bold;
+  display: inline-block;
+}
+.workCard {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.workCard:hover {
+  transform: translateY(-5px);
+}
+
+.cardIcons {
+  margin: 12px 20px;
+  display: flex;
+  gap: 12px;
+}
+
+.cardIcons a {
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.cardIcons a:hover {
+  color: #0077b5; /* LinkedIn blue */
+}
+
+/* Mobile-only positioning */
+@media (max-width: 768px) {
+  .heroContent {
+    position: relative;
+  }
+
+  .heroRole {
+    position: absolute;
+    bottom: 0.5rem;
+    right: 1rem;
+    font-size: 1rem;
+    color: #f39c12; /* highlight color */
+  }
+}
+
+/* ===== RESPONSIVE GALLERY ===== */
+@media (max-width: 900px) {
+  .galleryGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .galleryGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ===== RESPONSIVE FOOTER ===== */
+@media (max-width: 768px) {
+  .footerContainer {
+    grid-template-columns: 1fr;
+    text-align: left; /* ✅ still left on mobile */
+  }
+  .socialIcons {
+    justify-content: flex-start; /* ✅ left aligned on mobile */
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* ===== MOBILE RESPONSIVE ===== */
+@media (max-width: 768px) {
+  /* Hero Section */
+  .bigText {
+    font-size: 5rem;
+    letter-spacing: 2px;
+    position: relative;
+  }
+
+  .smallText {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-120%, -220%);
+    font-size: 1.2rem;
+    margin: 0;
+    color: #000;
+    opacity: 1;
+  }
+
+  .image {
+    width: 250px;
+    margin-top: -5rem;
+  }
+
+  .buttonContainer {
+    margin-top: -1rem;
+    gap: 0.6rem;
+  }
+
+  .button {
+    padding: 0.6rem 2.5rem;
+    font-size: 0.85rem;
+  }
+
+  .smallTxt {
+    position: fixed;
+
+    right: 1rem;
+    font-size: 1.4rem;
+    opacity: 0.8;
+  }
+
+  /* Header */
+  .navLinks {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  /* About Section */
+  .aboutContainer {
+    flex-direction: column;
+    text-align: center;
+    margin: 1rem 1rem;
+    align-items: center;
+    justify-content: center;
+    position: static;
+    height: auto; /* adjust height */
+  }
+
+  .aboutImage,
+  .aboutContent {
+    width: 100%; /* allow full width on mobile */
+    position: static;
+    z-index: auto;
+    padding: 1;
+  }
+  .aboutImage img {
+    /* max-width: 80%; scale image to container */
+    max-height: 700px; 
+    object-fit: cover; /* keeps proportions neat */
+  }
+  .aboutContent h2 {
+    font-size: 2rem;
+  }
+
+  .aboutContent .subText {
+    font-size: 1rem;
+  }
+
+  .experienceList {
+    margin-top: 1.5rem;
+  }
+
+  .servicesTitle {
+    font-size: 2rem;
+  }
+
+  .servicesSubtitle {
+    font-size: 0.95rem;
+  }
+
+  .servicesContainer {
+    display: flex;
+    margin: 1rem 0rem;
+    flex-direction: column; /* stack cards vertically */
+    align-items: center;
+    justify-content: center; /* center vertically */
+    box-sizing: border-box;
+  }
+
+  .serviceCard {
+    width: 100%;
+    box-sizing: border-box;
+    text-align: left;
+  }
+  .serviceCard h3 {
+    font-size: 1.2rem;
+  }
+
+  .serviceCard p {
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+  .workContainer {
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: 1fr;
+  }
+
+  /* .workCard img {
+    height: 180px;
+  } */
+}
