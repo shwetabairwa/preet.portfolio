@@ -909,3 +909,135 @@ b,
     height: 180px;
   } */
 }
+
+/* ===== HIRE ME FORM MODAL ===== */
+.modal-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 100;
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn 0.3s ease;
+}
+
+.modal-content {
+  background: #fff;
+  padding: 2.5rem;
+  border-radius: 12px;
+  max-width: 500px;
+  width: 90%;
+  position: relative;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+  animation: slideUp 0.3s ease;
+}
+
+.close-modal {
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  font-size: 2rem;
+  cursor: pointer;
+  color: #666;
+  transition: color 0.3s;
+  line-height: 1;
+}
+
+.close-modal:hover {
+  color: #000;
+}
+
+.modal-content h2 {
+  font-family: "Staatliches", sans-serif;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #000;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  font-family: "Staatliches", sans-serif;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  color: #000;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-family: sans-serif;
+  box-sizing: border-box;
+  transition: border-color 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #000;
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 1rem;
+  background: #25D366;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-family: "Staatliches", sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.submit-btn:hover {
+  background: #20BA5A;
+  transform: scale(1.02);
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Mobile Responsive for Modal */
+@media (max-width: 768px) {
+  .modal-content {
+    padding: 2rem 1.5rem;
+    width: 95%;
+  }
+
+  .modal-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    font-size: 0.9rem;
+  }
+}

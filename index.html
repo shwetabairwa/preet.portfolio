@@ -1,443 +1,488 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pooja Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-  <!-- For icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
-  <script src="https://unpkg.com/feather-icons"></script>
-</head>
-<body>
-  <!-- HEADER -->
-  <header class="header">
-    <div class="logo">Pooja.</div>
-    <nav class="navLinks">
-      <a href="#about">About</a>
-      <a href="#services">Services</a>
-      <a href="#work">My Work</a>
-      <button class="navBtn" onclick="handleWhatsAppClick()">Let's Talk</button>
-    </nav>
-    <div class="hamburger" onclick="openMenu()">☰</div>
-    <div class="drawer" id="drawer">
-      <div class="closeBtn" onclick="closeMenu()">✕</div>
-      <a href="#about" onclick="closeMenu()">About</a>
-      <a href="#services" onclick="closeMenu()">Services</a>
-      <a href="#work" onclick="closeMenu()">My Work</a>
-      <button class="navBtn" onclick="handleWhatsAppClick()">Let's Talk</button>
-    </div>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pooja Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- For icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <script src="https://unpkg.com/feather-icons"></script>
+    </head>
+    
+    <body>
+      <!-- HEADER -->
+      <header class="header">
+        <div class="logo">Pooja.</div>
+        <nav class="navLinks">
+          <a href="#about">About</a>
+          <a href="#services">Services</a>
+          <a href="#work">My Work</a>
+        <button class="navBtn" onclick="handleWhatsAppClick()">
+          Let's Talk
+        </button>
+        </nav>
+        <div class="hamburger" onclick="openMenu()">☰</div>
+        <div class="drawer" id="drawer">
+          <div class="closeBtn" onclick="closeMenu()">✕</div>
+          <a href="#about" onclick="closeMenu()">About</a>
+          <a href="#services" onclick="closeMenu()">Services</a>
+          <a href="#work" onclick="closeMenu()">My Work</a>
+        <button class="navBtn" onclick="handleWhatsAppClick()">
+          Let's Talk
+        </button>
+        </div>
+        </header>
 
-  <!-- MAIN -->
-  <section class="wrapper">
-    <div class="textContainer">
-      <h1 class="bigText">PORTFOLIO</h1>
-      <div>
-        <p class="smallText">👋 Hi, I am Pooja</p>
-        <p class="smallTxt">Digital Marketer - 2016</p>
+    <!-- MAIN -->
+    <section class="wrapper">
+      <div class="textContainer">
+        <h1 class="bigText">PORTFOLIO</h1>
+        <div>
+          <p class="smallText">👋 Hi, I am Pooja</p>
+          <p class="smallTxt">Digital Marketer - 2016</p>
+        </div>
       </div>
-    </div>
-    <img src="assets/preet.png" alt="Preet" class="image">
-    <div class="buttonContainer">
-      <button class="button">Hire Me</button>
-      <button class="button" onclick="handleWhatsAppClick()">Let's Talk</button>
-    </div>
-  </section>
+      <img src="assets/preet.png" alt="Preet" class="image" />
+      <div class="buttonContainer">
+        <button class="button" onclick="openHireMeForm()">Hire Me</button>
+        <button class="button" onclick="handleWhatsAppClick()">
+          Let's Talk
+        </button>
+        </div>
+        </section>
 
-  <!-- ABOUT SECTION -->
-  <section class="aboutSection" id="about">
-    <div class="aboutContainer">
-      <div class="aboutImage">
-        <img src="assets/design.png" alt="About Preet">
-      </div>
-      <div class="aboutContent">
-        <h2>About Me</h2>
-        <p class="subText">
-          Hello, My Name Is Pooja Verma. I'm a results-driven Digital Marketing Executive with 3 years experience...
+    <!-- ABOUT SECTION -->
+    <section class="aboutSection" id="about">
+      <div class="aboutContainer">
+        <div class="aboutImage">
+          <img src="assets/design.png" alt="About Pooja" />
+          </div>
+          <div class="aboutContent">
+            <h2>About Me</h2>
+            <p class="subText">
+            Hello, My Name Is Pooja Verma. I'm a results-driven Digital
+            Marketing Executive with 3 years experience...
+            </p>
+
+          <!-- Experience Timeline -->
+          <div class="experienceList">
+            <div class="experienceItem">
+              <div class="dot"></div>
+              <div class="line"></div>
+              <div>
+                <p class="company">AHOM TECHNOLOGIES PVT. LTD.</p>
+                <p class="roleYear">
+                  Digital Marketing Executive - May 2025 - Present
+                </p>
+                </div>
+                </div>
+                <div class="experienceItem">
+                  <div class="dot"></div>
+                  <div class="line"></div>
+                  <div>
+                    <p class="company">VOIK INDIA</p>
+                <p class="roleYear">
+                  Digital Marketing Executive - Jan 2024 - Apr 2025
+                </p>
+                </div>
+                </div>
+                <div class="experienceItem">
+                  <div class="dot"></div>
+                  <div>
+                    <p class="company">FORTUNE SAFETY INDUSTRIES</p>
+                <p class="roleYear">
+                  Social Media Manager - Jan 2023 - Dec 2023
+                </p>
+                </div>
+                </div>
+                </div>
+
+          <div id="skillsSection" style="display: none">
+            <p class="skill">SKILLS & Expertise</p>
+            <ul class="skillsList">
+              <li>
+                Digital marketing, social media strategy & influencer
+                collaborations
+              </li>
+              <li>Content creation & optimization across major platforms</li>
+              <li>Meta Ads & Google Ads</li>
+              <li>Email marketing (Mailerlite, Mailchimp)</li>
+              <li>Basic SEO, GMB, GA, GSC</li>
+              <li>Creative Design (Canva)</li>
+              <li>Effective communication & teamwork</li>
+              </ul>
+              </div>
+
+          <button class="button" onclick="toggleSkills()">Show More</button>
+          </div>
+          </div>
+          </section>
+
+    <!-- SERVICES SECTION -->
+    <section class="servicesSection" id="services">
+      <h2 class="servicesTitle">My Services</h2>
+      <p class="servicesSubtitle">
+        Helping brands grow with creative strategies and digital marketing
+        solutions.
+      </p>
+      <div class="servicesContainer">
+        <div class="serviceCard">
+          <h3>📱 Social Media Management</h3>
+          <ul>
+            <li>
+              Managing Instagram, Facebook, LinkedIn, X.com, YouTube, Pinterest
+            </li>
+            <li>Creating content calendars & posting schedules</li>
+            <li>Engaging with followers & building brand reputation</li>
+            <li>Tracking performance and improving results</li>
+            </ul>
+            </div>
+            <div class="serviceCard">
+              <h3>🎯 Paid Ads (Meta & Google)</h3>
+              <ul>
+                <li>Facebook, Instagram & Google ad campaigns</li>
+                <li>Audience targeting & segmentation</li>
+                <li>Lead generation & sales-focused ads</li>
+                <li>Retargeting campaigns</li>
+              </ul>
+            </div>
+            <div class="serviceCard">
+              <h3>✍️ Content Creation</h3>
+              <ul>
+                <li>Social media posts, reels, and videos</li>
+                <li>Blogs & articles for brand storytelling</li>
+                <li>Ad copies & landing page content</li>
+                <li>SEO-friendly content</li>
+              </ul>
+            </div>
+            <div class="serviceCard">
+              <h3>📩 Email Marketing</h3>
+              <ul>
+                <li>Personalized emails & automated campaigns</li>
+                <li>Attractive newsletters</li>
+                <li>Targeted audience lists</li>
+                <li>Improving open rates & clicks</li>
+              </ul>
+            </div>
+            </div>
+            </section>
+
+    <!-- GALLERY SECTION -->
+    <section class="gallerySection" id="gallery">
+      <h2 class="galleryTitle">Social Media Posts</h2>
+      <p class="gallerySubtitle">Explore my creative works</p>
+      <div class="galleryGrid">
+        <div class="galleryItem">
+          <img src="assets/post1.jpeg" alt="Gallery 1" />
+        </div>
+        <div class="galleryItem">
+          <img src="assets/post10.jpeg" alt="Gallery 2" />
+        </div>
+        <div class="galleryItem">
+          <img src="assets/post2.jpeg" alt="Gallery 3" />
+        </div>
+        <div class="galleryItem">
+          <img src="assets/post3.jpeg" alt="Gallery 4" />
+        </div>
+        <div class="galleryItem">
+          <img src="assets/post4.jpeg" alt="Gallery 5" />
+        </div>
+        <div class="galleryItem">
+          <img src="assets/post5.jpeg" alt="Gallery 6" />
+        </div>
+        <div class="galleryItem">
+          <img src="assets/post6.jpeg" alt="Gallery 7" />
+        </div>
+        <div class="galleryItem">
+          <img src="assets/post7.jpeg" alt="Gallery 8" />
+        </div>
+        <div class="galleryItem">
+          <img src="assets/post9.jpeg" alt="Gallery 9" />
+        </div>
+        </div>
+        </section>
+
+    <!-- WORK SECTION -->
+
+    <section class="workSection" id="work">
+      <h2 class="workTitle">My Work</h2>
+      <p class="workSubtitle">
+        A glimpse of the projects I have worked on — combining creativity and
+        strategy to deliver impact.
         </p>
 
-        <!-- Experience Timeline -->
-        <div class="experienceList">
-          <div class="experienceItem">
-            <div class="dot"></div>
-            <div class="line"></div>
-            <div>
-              <p class="company">AHOM TECHNOLOGIES PVT. LTD.</p>
-              <p class="roleYear">Digital Marketing Executive - May 2025 - Present</p>
+      <div class="workContainer">
+        <!-- Ma-vie -->
+        <div class="workCard">
+          <img src="assets/0.png" alt="Project 1" />
+          <h3>Ma-vie</h3>
+          <p>
+            Handled Social Media and Creative Content Design, enhancing brand
+            presence across platforms. Managed Amazon listing images, Meta Ads,
+            Off-Page SEO, Google My Business, Influencer Marketing, and Shopify
+            Website Handling.
+          </p>
+          <div class="cardIcons">
+            <a href="https://ma-vie.in/" target="_blank"><i class="fa-solid fa-globe"></i></a>
+            <a href="https://www.instagram.com/mavie.in/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.facebook.com/jadore.mavie.in" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://in.pinterest.com/mavie_in/" target="_blank"><i class="fa-brands fa-pinterest"></i></a>
+            </div>
+            </div>
+
+        <!-- Dr Kumar’s Lifestyle Centre -->
+        <div class="workCard">
+          <img src="assets/3.png" alt="Project 1" />
+          <h3>Dr Kumar’s Lifestyle Centre</h3>
+          <p>
+            Handled Social Media and Creative Content Design, improving brand
+            visibility. Managed Amazon & Flipkart listing images, Meta Ads,
+            Off-Page SEO, Google My Business, and Email Marketing.
+          </p>
+          <div class="cardIcons">
+            <a href="https://share.google/rn1rUgtTExyVpDvRf" target="_blank"><i class="fa-solid fa-globe"></i></a>
+            <a href="https://www.linkedin.com/in/drkumarslifestylecentre/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/drkumarslifestylecentre/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.facebook.com/DoctorKumarsLifestyleCentre/" target="_blank"><i
+                class="fa-brands fa-facebook"></i></a>
+            <a href="https://x.com/doctorkumars" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="https://www.threads.net/@drkumarslifestylecentre" target="_blank"><i class="fa-brands fa-threads"></i></a>
+            <a href="https://in.pinterest.com/drkumarslifestylecentre" target="_blank"><i class="fa-brands fa-pinterest"></i></a>
+            </div>
+            </div>
+
+        <!-- AHOM Technologies Pvt. Ltd. -->
+        <div class="workCard">
+          <img src="assets/4.jpeg" alt="Project 1" />
+          <h3>AHOM Technologies Pvt. Ltd.</h3>
+          <p>
+            Handled Social Media and Creative Content Design, improving brand
+            storytelling across platforms.
+          </p>
+          <div class="cardIcons">
+            <a href="https://www.linkedin.com/company/ahomtechnologies/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.facebook.com/ahomtechnologies" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/ahomtechnologies/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://share.google/zbPySEzPBsqxOH1Zo" target="_blank"><i class="fa-solid fa-globe"></i></a>
+            <a href="https://x.com/ahomtech" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+            </div>
+
+        <!-- Pooja Sense -->
+        <div class="workCard">
+          <img src="assets/1.jpeg" alt="Project 1" />
+          <h3>PR Sense</h3>
+          <p>
+            Handled Social Media and Creative Content Design, improving brand
+            storytelling across platforms. Managed Meta Ads, Off-Page SEO, and
+            Email Marketing.
+          </p>
+          <div class="cardIcons">
+            <a href="https://www.instagram.com/eazy.pizy/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://x.com/eazy_pizy" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="https://www.linkedin.com/company/eazy-pizy/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            </div>
+
+        <!-- Square Root Clinic -->
+        <div class="workCard">
+          <img src="assets/7.jpeg" alt="Project 1" />
+          <h3>Square Root Clinic</h3>
+          <p>
+            Handled Social Media and Creative Content Design to enhance brand
+            storytelling. Managed Influencer Marketing, Meta Ads, and Google My
+            Business.
+          </p>
+          <div class="cardIcons">
+            <a href="https://www.instagram.com/prsenseindia/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/company/prsenseinternational/" target="_blank"><i
+                class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=61579718910191" target="_blank"><i
+                class="fa-brands fa-facebook"></i></a>
+            <a href="https://x.com/prsenseglobal" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="https://www.youtube.com/@prsenseindia" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+            </div>
+
+        <!-- Voik India -->
+        <div class="workCard">
+          <img src="assets/2.png" alt="Project 1" />
+          <h3>Voik India</h3>
+          <p>
+            Handled Social Media and Creative Content Design, strengthening
+            brand storytelling across platforms. Managed Amazon listing images,
+            Influencer Marketing, Meta Ads, Off-Page SEO, and Google My
+            Business.
+          </p>
+          <div class="cardIcons">
+            <a href="https://www.linkedin.com/company/voik-india/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/voikbottles/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.youtube.com/@Voikssbottles" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://www.facebook.com/Voikssbottles/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://share.google/deMQXYOu5bEc8bkJc" target="_blank"><i class="fa-solid fa-globe"></i></a>
+            <a href="https://www.amazon.in/stores/VOIK/" target="_blank"><i class="fa-brands fa-amazon"></i></a>
+            </div>
+            </div>
+
+        <!-- Fortune Safety Industries -->
+        <div class="workCard">
+          <img src="assets/6.jpeg" alt="Project 1" />
+          <h3>Fortune Safety Industries Pvt. Ltd.</h3>
+          <p>
+            Handled Social Media and Creative Content Design, improving brand
+            storytelling across platforms. Also managed Amazon listing images.
+          </p>
+          <div class="cardIcons">
+            <a href="https://www.linkedin.com/company/fortunesafety/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/fortunesafetyindustries/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.facebook.com/fortunesafety/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.amazon.in/stores/Fortune/" target="_blank"><i class="fa-brands fa-amazon"></i></a>
+            </div>
+            </div>
+
+        <!-- Bluehawks EduAbroad -->
+        <div class="workCard">
+          <img src="assets/4.png" alt="Project 1" />
+          <h3>Bluehawks EduAbroad</h3>
+          <p>
+            Handled Social Media and Creative Content Design, improving brand
+            storytelling across all platforms.
+          </p>
+          <div class="cardIcons">
+            <a href="https://www.facebook.com/bluehawksedu" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.linkedin.com/company/bluehawksedu/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/bluehawks.eduabroad/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.youtube.com/@bluehawksabroad" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://x.com/bluehawksedu" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+            </div>
+            </div>
+            </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footerContainer">
+        <div class="footerAbout">
+          <h3>Pooja.</h3>
+          <p>
+            Digital Marketing Executive crafting strategies that drive growth
+            and brand visibility.
+          </p>
+          </div>
+          <div class="footerLinks">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="#about">About</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#work">Work</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footerSocials">
+            <h4>Connect</h4>
+            <div class="socialIcons">
+              <a href="https://yourwebsite.com" target="_blank"><i class="fas fa-globe"></i></a>
+              <a href="mailto:vermaapooja08@gmail.com"><i class="fas fa-envelope"></i></a>
+              <a href="https://www.linkedin.com/in/poojavermaa09/" target="_blank"><i class="fab fa-linkedin"></i></a>
+              <a href="https://www.instagram.com/we.gurugrammer/" target="_blank"><i class="fab fa-instagram"></i></a>
             </div>
           </div>
-          <div class="experienceItem">
-            <div class="dot"></div>
-            <div class="line"></div>
-            <div>
-              <p class="company">VOIK INDIA</p>
-              <p class="roleYear">Digital Marketing Executive - Jan 2024 - Apr 2025</p>
-            </div>
           </div>
-          <div class="experienceItem">
-            <div class="dot"></div>
-            <div>
-              <p class="company">FORTUNE SAFETY INDUSTRIES</p>
-              <p class="roleYear">Social Media Manager - Jan 2023 - Dec 2023</p>
-            </div>
+          <div class="footerBottom">
+        <p>
+          © 2025 Developed By
+          <a href="https://shwetabairwa.github.io/sb-portfolio/" target="_blank" rel="noopener noreferrer"
+            style="color: #fff; text-decoration: none">
+            Shweta Bairwa </a>. All Rights Reserved.
+        </p>
+        </div>
+        </footer>
+
+    <!-- Hire Me Form Modal -->
+    <div class="modal-overlay" id="hireMeModal">
+      <div class="modal-content">
+        <span class="close-modal" onclick="closeHireMeForm()">&times;</span>
+        <h2>Get In Touch</h2>
+        <form id="hireMeForm" onsubmit="handleFormSubmit(event)">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" required placeholder="Enter your name">
           </div>
-        </div>
-
-        <div id="skillsSection" style="display:none;">
-          <p class="skill">SKILLS & Expertise</p>
-          <ul class="skillsList">
-            <li>Digital marketing, social media strategy & influencer collaborations</li>
-            <li>Content creation & optimization across major platforms</li>
-            <li>Meta Ads & Google Ads</li>
-            <li>Email marketing (Mailerlite, Mailchimp)</li>
-            <li>Basic SEO, GMB, GA, GSC</li>
-            <li>Creative Design (Canva)</li>
-            <li>Effective communication & teamwork</li>
-          </ul>
-        </div>
-
-        <button class="button" onclick="toggleSkills()">Show More</button>
-      </div>
-    </div>
-  </section>
-
-  <!-- SERVICES SECTION -->
-  <section class="servicesSection" id="services">
-    <h2 class="servicesTitle">My Services</h2>
-    <p class="servicesSubtitle">Helping brands grow with creative strategies and digital marketing solutions.</p>
-    <div class="servicesContainer">
-      <div class="serviceCard">
-        <h3>📱 Social Media Management</h3>
-        <ul>
-          <li>Managing Instagram, Facebook, LinkedIn, X.com, YouTube, Pinterest</li>
-          <li>Creating content calendars & posting schedules</li>
-          <li>Engaging with followers & building brand reputation</li>
-          <li>Tracking performance and improving results</li>
-        </ul>
-      </div>
-      <div class="serviceCard">
-        <h3>🎯 Paid Ads (Meta & Google)</h3>
-        <ul>
-          <li>Facebook, Instagram & Google ad campaigns</li>
-          <li>Audience targeting & segmentation</li>
-          <li>Lead generation & sales-focused ads</li>
-          <li>Retargeting campaigns</li>
-        </ul>
-      </div>
-      <div class="serviceCard">
-        <h3>✍️ Content Creation</h3>
-        <ul>
-          <li>Social media posts, reels, and videos</li>
-          <li>Blogs & articles for brand storytelling</li>
-          <li>Ad copies & landing page content</li>
-          <li>SEO-friendly content</li>
-        </ul>
-      </div>
-      <div class="serviceCard">
-        <h3>📩 Email Marketing</h3>
-        <ul>
-          <li>Personalized emails & automated campaigns</li>
-          <li>Attractive newsletters</li>
-          <li>Targeted audience lists</li>
-          <li>Improving open rates & clicks</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- GALLERY SECTION -->
-  <section class="gallerySection" id="gallery">
-    <h2 class="galleryTitle">Social Media Posts</h2>
-    <p class="gallerySubtitle">Explore my creative works</p>
-    <div class="galleryGrid">
-      <div class="galleryItem"><img src="assets/post1.jpeg" alt="Gallery 1"></div>
-      <div class="galleryItem"><img src="assets/post10.jpeg" alt="Gallery 2"></div>
-      <div class="galleryItem"><img src="assets/post2.jpeg" alt="Gallery 3"></div>
-      <div class="galleryItem"><img src="assets/post3.jpeg" alt="Gallery 4"></div>
-      <div class="galleryItem"><img src="assets/post4.jpeg" alt="Gallery 5"></div>
-      <div class="galleryItem"><img src="assets/post5.jpeg" alt="Gallery 6"></div>
-      <div class="galleryItem"><img src="assets/post6.jpeg" alt="Gallery 7"></div>
-      <div class="galleryItem"><img src="assets/post7.jpeg" alt="Gallery 8"></div>
-      <div class="galleryItem"><img src="assets/post9.jpeg" alt="Gallery 9"></div>
-    </div>
-  </section>
-
-  <!-- WORK SECTION -->
-
-  <section class="workSection" id="work">
-  <h2 class="workTitle">My Work</h2>
-  <p class="workSubtitle">
-    A glimpse of the projects I have worked on — combining creativity and strategy to deliver impact.
-  </p>
-
-  <div class="workContainer">
-    <!-- Project 1 -->
-    <div class="workCard">
-
-         <img src="assets/1.jpeg" alt="Project 1">
-      <h3>Pr Sense</h3>
-      <p>Social Media Campaign for a leading brand that boosted engagement by 45%.</p>
-      <div class="cardIcons">
-        <a href="https://www.instagram.com/prsenseindia/" target="_blank" rel="noopener noreferrer">
-          <i class="fa-brands fa-instagram"></i>
-        </a>
-        <a href="https://www.linkedin.com/company/prsenseinternational/" target="_blank" rel="noopener noreferrer">
-          <i class="fa-brands fa-linkedin"></i>
-        </a>
-        <a href="https://www.facebook.com/profile.php?id=61579718910191" target="_blank" rel="noopener noreferrer">
-          <i class="fa-brands fa-facebook"></i>
-        </a>
-        <a href="https://x.com/prsenseglobal" target="_blank" rel="noopener noreferrer">
-          <i class="fa-brands fa-x-twitter"></i>
-        </a>
-        <a href="https://www.youtube.com/@prsenseindia" target="_blank" rel="noopener noreferrer">
-          <i class="fa-brands fa-youtube"></i>
-        </a>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required placeholder="Tell me about your project..." rows="5"></textarea>
+          </div>
+          <button type="submit" class="submit-btn">Send via WhatsApp</button>
+        </form>
       </div>
     </div>
 
-    <!-- Project 2 -->
-    <div class="workCard">
-
-         <img src="assets/2.jpeg" alt="Project 1">
-      <h3>Eazy Pizy</h3>
-      <p>Google Ads campaign that generated quality leads with a 3x ROI.</p>
-      <div class="cardIcons">
-        <a href="https://www.linkedin.com/company/eazy-pizy/" target="_blank" rel="noopener noreferrer">
-          <i class="fa-brands fa-linkedin"></i>
-        </a>
-        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
-          <i class="fa-brands fa-facebook"></i>
-        </a>
-        <a href="https://www.instagram.com/eazy.pizy/" target="_blank" rel="noopener noreferrer">
-          <i class="fa-brands fa-instagram"></i>
-        </a>
-        <a href="https://x.com/eazy_pizy" target="_blank" rel="noopener noreferrer">
-          <i class="fa-brands fa-x-twitter"></i>
-        </a>
-      </div>
-    </div>
-
-    <!-- Project 3 -->
-    <div class="workCard">
-
-         <img src="assets/3.jpeg" alt="Project 1">
-      <h3>Voik India</h3>
-      <p>Google Ads campaign that generated quality leads with a 3x ROI.</p>
-      <div class="cardIcons">
-        <a href="https://www.linkedin.com/company/voik-india/" target="_blank" rel="noopener noreferrer">
-          <i class="fa-brands fa-linkedin"></i>
-        </a>
-        <a href="https://www.instagram.com/voikbottles/" target="_blank" rel="noopener noreferrer">
-          <i class="fa-brands fa-instagram"></i>
-        </a>
-        <a href="https://www.youtube.com/@Voikssbottles" target="_blank" rel="noopener noreferrer">
-          <i class="fa-brands fa-youtube"></i>
-        </a>
-        <a href="https://www.facebook.com/Voikssbottles/" target="_blank" rel="noopener noreferrer">
-          <i class="fa-brands fa-facebook"></i>
-        </a>
-        <a href="https://share.google/deMQXYOu5bEc8bkJc" target="_blank" rel="noopener noreferrer">
-          <i class="fa-solid fa-globe"></i>
-        </a>
-        <a href="https://www.amazon.in/stores/VOIK/" target="_blank" rel="noopener noreferrer">
-          <i class="fa-brands fa-amazon"></i>
-        </a>
-      </div>
-    </div>
-
-    <!-- Project 4 -->
-    <div class="workCard">
-
-         <img src="assets/4.jpeg" alt="Project 1">
-      <h3>AHOM Technologies Pvt. Ltd.</h3>
-      <p>Google Ads campaign that generated quality leads with a 3x ROI.</p>
-      <div class="cardIcons">
-        <a href="https://www.linkedin.com/company/ahomtechnologies/" target="_blank" rel="noopener noreferrer">
-          <i class="fa-brands fa-linkedin"></i>
-        </a>
-        <a href="https://www.facebook.com/ahomtechnologies" target="_blank" rel="noopener noreferrer">
-          <i class="fa-brands fa-facebook"></i>
-        </a>
-        <a href="https://www.instagram.com/ahomtechnologies/" target="_blank" rel="noopener noreferrer">
-          <i class="fa-brands fa-instagram"></i>
-        </a>
-        <a href="https://share.google/zbPySEzPBsqxOH1Zo" target="_blank" rel="noopener noreferrer">
-          <i class="fa-solid fa-globe"></i>
-        </a>
-        <a href="https://x.com/ahomtech" target="_blank" rel="noopener noreferrer">
-          <i class="fa-brands fa-x-twitter"></i>
-        </a>
-      </div>
-    </div>
-
-    <!-- Project 5 -->
-    <div class="workCard">
-
-         <img src="assets/5.jpeg" alt="Project 1">
-      <h3>Bluehawks EduAbroad</h3>
-      <p>Google Ads campaign that generated quality leads with a 3x ROI.</p>
-      <div class="cardIcons">
-        <a href="https://www.facebook.com/bluehawksedu" target="_blank" rel="noopener noreferrer">
-          <i class="fa-brands fa-facebook"></i>
-        </a>
-        <a href="https://www.linkedin.com/company/bluehawksedu/" target="_blank" rel="noopener noreferrer">
-          <i class="fa-brands fa-linkedin"></i>
-        </a>
-        <a href="https://www.instagram.com/bluehawks.eduabroad/" target="_blank" rel="noopener noreferrer">
-          <i class="fa-brands fa-instagram"></i>
-        </a>
-        <a href="https://www.youtube.com/@bluehawksabroad" target="_blank" rel="noopener noreferrer">
-          <i class="fa-brands fa-youtube"></i>
-        </a>
-        <a href="https://x.com/bluehawksedu" target="_blank" rel="noopener noreferrer">
-          <i class="fa-brands fa-x-twitter"></i>
-        </a>
-      </div>
-    </div>
-
-    <!-- Project 6 -->
-    <div class="workCard">
-
-         <img src="assets/6.jpeg" alt="Project 1">
-      <h3>Fortune Safety Industries Pvt. Ltd.</h3>
-      <p>Google Ads campaign that generated quality leads with a 3x ROI.</p>
-      <div class="cardIcons">
-        <a href="https://www.linkedin.com/company/fortunesafety/" target="_blank" rel="noopener noreferrer">
-          <i class="fa-brands fa-linkedin"></i>
-        </a>
-        <a href="https://www.instagram.com/fortunesafetyindustries/" target="_blank" rel="noopener noreferrer">
-          <i class="fa-brands fa-instagram"></i>
-        </a>
-        <a href="https://www.facebook.com/fortunesafety/" target="_blank" rel="noopener noreferrer">
-          <i class="fa-brands fa-facebook"></i>
-        </a>
-        <a href="https://www.amazon.in/stores/Fortune/" target="_blank" rel="noopener noreferrer">
-          <i class="fa-brands fa-amazon"></i>
-        </a>
-      </div>
-    </div>
-
-    <!-- Project 7 -->
-    <div class="workCard">
-
-         <img src="assets/7.jpeg" alt="Project 1">
-      <h3>Square Root Clinic</h3>
-      <p>Google Ads campaign that generated quality leads with a 3x ROI.</p>
-      <div class="cardIcons">
-        <a href="https://www.linkedin.com/company/square-root-hair-skin-laser/" target="_blank" rel="noopener noreferrer">
-          <i class="fa-brands fa-linkedin"></i>
-        </a>
-        <a href="https://www.instagram.com/squarerootclinic/" target="_blank" rel="noopener noreferrer">
-          <i class="fa-brands fa-instagram"></i>
-        </a>
-        <a href="https://www.facebook.com/SquareRootClinic" target="_blank" rel="noopener noreferrer">
-          <i class="fa-brands fa-facebook"></i>
-        </a>
-        <a href="https://www.youtube.com/@squareroot-hairskinlasercl3947" target="_blank" rel="noopener noreferrer">
-          <i class="fa-brands fa-youtube"></i>
-        </a>
-        <a href="https://share.google/8SXP6RR3QfO22HTaX" target="_blank" rel="noopener noreferrer">
-          <i class="fa-solid fa-globe"></i>
-        </a>
-      </div>
-    </div>
-
-    <!-- Project 8 -->
-    <div class="workCard">
-
-         <img src="assets/8.jpeg" alt="Project 1">
-      <h3>Dr Kumar’s Lifestyle Centre</h3>
-      <p>Creative content design that improved brand storytelling across platforms.</p>
-      <div class="cardIcons">
-        <a href="https://share.google/rn1rUgtTExyVpDvRf" target="_blank" rel="noopener noreferrer">
-          <i class="fa-solid fa-globe"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/drkumarslifestylecentre/" target="_blank" rel="noopener noreferrer">
-          <i class="fa-brands fa-linkedin"></i>
-        </a>
-        <a href="https://www.instagram.com/drkumarslifestylecentre/" target="_blank" rel="noopener noreferrer">
-          <i class="fa-brands fa-instagram"></i>
-        </a>
-        <a href="https://www.facebook.com/DoctorKumarsLifestyleCentre/" target="_blank" rel="noopener noreferrer">
-          <i class="fa-brands fa-facebook"></i>
-        </a>
-        <a href="https://x.com/doctorkumars" target="_blank" rel="noopener noreferrer">
-          <i class="fa-brands fa-x-twitter"></i>
-        </a>
-        <a href="https://www.threads.net/@drkumarslifestylecentre" target="_blank" rel="noopener noreferrer">
-          <i class="fa-brands fa-threads"></i>
-        </a>
-        <a href="https://in.pinterest.com/drkumarslifestylecentre" target="_blank" rel="noopener noreferrer">
-          <i class="fa-brands fa-pinterest"></i>
-        </a>
-      </div>
-    </div>
-  </div>
-</section>
-
- 
-
-  <!-- FOOTER -->
-  <footer class="footer">
-    <div class="footerContainer">
-      <div class="footerAbout">
-        <h3>Preet.</h3>
-        <p>Digital Marketing Executive crafting strategies that drive growth and brand visibility.</p>
-      </div>
-      <div class="footerLinks">
-        <h4>Quick Links</h4>
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#work">Work</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-      <div class="footerSocials">
-        <h4>Connect</h4>
-        <div class="socialIcons">
-          <a href="https://yourwebsite.com" target="_blank"><i class="fas fa-globe"></i></a>
-          <a href="mailto:vermaapooja08@gmail.com"><i class="fas fa-envelope"></i></a>
-          <a href="https://www.linkedin.com/in/poojavermaa09/" target="_blank"><i class="fab fa-linkedin"></i></a>
-          <a href="https://www.instagram.com/we.gurugrammer/" target="_blank"><i class="fab fa-instagram"></i></a>
-        </div>
-      </div>
-    </div>
-    <div class="footerBottom">
-      <p>© 2025 Preet. All Rights Reserved.</p>
-    </div>
-  </footer>
-
-  <script>
-    // Hamburger menu
-    function openMenu() {
-      document.getElementById("drawer").classList.add("open");
-    }
-    function closeMenu() {
-      document.getElementById("drawer").classList.remove("open");
-    }
-
-    // Toggle skills section
-    function toggleSkills() {
-      const skills = document.getElementById("skillsSection");
-      if (skills.style.display === "none") {
-        skills.style.display = "block";
-      } else {
-        skills.style.display = "none";
+    <script>
+      // Hamburger menu
+      function openMenu() {
+        document.getElementById("drawer").classList.add("open");
       }
-    }
+      function closeMenu() {
+        document.getElementById("drawer").classList.remove("open");
+      }
 
-    // WhatsApp click
-    function handleWhatsAppClick() {
-      const phoneNumber = "8696983866";
-      const message = "Hello Preet, I want to discuss a project with you.";
-      const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
-      window.open(url, "_blank");
-    }
+                    // Toggle skills section
+                    function toggleSkills() {
+                      const skills = document.getElementById("skillsSection");
+                      if (skills.style.display === "none") {
+                        skills.style.display = "block";
+                      } else {
+                        skills.style.display = "none";
+                      }
+                    }
 
-    feather.replace();
-  </script>
-</body>
+                    // WhatsApp click
+                    function handleWhatsAppClick() {
+                      const phoneNumber = "8696983866";
+                        const message = "Hello Pooja, I want to discuss a project with you.";
+                        const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
+                          message
+                        )}`;
+                        window.open(url, "_blank");
+                      }
+
+                      // Open Hire Me Form Modal
+                      function openHireMeForm() {
+                        document.getElementById("hireMeModal").style.display = "flex";
+                      }
+
+                      // Close Hire Me Form Modal
+                      function closeHireMeForm() {
+                        document.getElementById("hireMeModal").style.display = "none";
+                        document.getElementById("hireMeForm").reset();
+                      }
+
+                      // Handle Form Submit
+                      function handleFormSubmit(event) {
+                        event.preventDefault();
+                        const name = document.getElementById("name").value;
+                        const message = document.getElementById("message").value;
+                        const phoneNumber = "8696983866";
+
+                        const whatsappMessage = `Hello Pooja, I am ${name}. ${message}`;
+                        const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
+                          whatsappMessage
+                        )}`;
+
+                        window.open(url, "_blank");
+                          closeHireMeForm();
+                        }
+
+                        // Close modal when clicking outside
+                        window.onclick = function (event) {
+                          const modal = document.getElementById("hireMeModal");
+                          if (event.target === modal) {
+                            closeHireMeForm();
+                          }
+                    }
+
+                    feather.replace();
+                  </script>
+                </body>
 </html>
